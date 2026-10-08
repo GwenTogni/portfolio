@@ -17,18 +17,38 @@ body {
 	overflow: hidden;
 }
 
-.banner>img {
+.banner>section {
+	padding: 0;
 	margin: 0;
-	width: 100%;
-	height: fit-content;
-	filter: blur(2px);
-	opacity: 0.4;
 }
 
-.banner>.cartoon {
+.banner>section>img {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		/* height: 100px; */
+		/* height: fit-content; */
+		filter: blur(2px);
+		opacity: 0.5;
+	}
+
+	.player {
+		left: 70%;
+		width: 15%;
+		bottom: -50px;
+		position: absolute;
+	}
+	.enemy {
+		left: 30%;
+		width: 30%;
+		top: 100px;
+		position: absolute;
+	}
+
+/* .banner>.cartoon {
 	position: absolute;
 	bottom: -50px;
-}
+} */
 
 .banner>p {
 	position: absolute;
@@ -394,6 +414,15 @@ iframe {
 
 .show {display: block;}
 
+/* Responsive versione mobile */
+@media only screen and (max-width: 1200px) {
+	.player {
+		width: 25%;
+	}
+	.enemy {
+		width: 35%;
+	}
+}
 
 /* Responsive versione mobile */
 @media only screen and (max-width: 600px) {
@@ -432,7 +461,11 @@ iframe {
 		height: 200px;
 	}
 
-	.banner>img {
+	.banner>section {
+		display: none;
+	}
+
+	.banner>div {
 		display: none;
 	}
 
