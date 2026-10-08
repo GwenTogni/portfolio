@@ -263,6 +263,7 @@ header {
 			header>div>img:hover {
 				max-width: 70px;
 			}
+
 /* Footer */
 footer {
 	background-color: rgb(0, 10, 35);
@@ -371,6 +372,11 @@ footer {
 		height: 400px;
 		border-radius: 10px 10px 0 0;
 		object-fit: cover;
+		filter:saturate(0.2);
+		/* filter: grayscale(); */
+	}
+	.project>img:hover {
+		filter: saturate(1);
 	}
 
 .containerCard {
