@@ -28,7 +28,7 @@ body {
 		margin: 0;
 		/* height: 100px; */
 		/* height: fit-content; */
-		filter: blur(2px);
+		/* filter: blur(2px); */
 		opacity: 0.5;
 	}
 
