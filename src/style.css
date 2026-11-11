@@ -345,16 +345,18 @@ footer {
 
 .project {
 	border: 1px solid rgb(255, 255, 255);
-	/* height: fit-content; */
 	height: 500px;
 	text-decoration: none;
 	flex: 1;
 	min-width: 400px;
 	max-width: 800px;
-	h3 {
+	/* h3 {
 		display: none;
 	}
 	p {
+		display: none;
+	} */
+	div {
 		display: none;
 	}
 	img {
@@ -365,15 +367,20 @@ footer {
 }
 .project:hover {
 	background-color: rgb(60,60,150);
+	transition-duration: 0.2s;
 	img {
 		height: 380px;
+		filter: opacity(0.5) grayscale();
 	}
-		h3 {
+		/* h3 {
 		display: block;
-	}
-	p {
+	} */
+	 div {
 		display: block;
-	}
+	 }
+	/* p {
+		display: block;
+	} */
 }
 
 .containerCard {
