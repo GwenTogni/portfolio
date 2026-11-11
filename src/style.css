@@ -361,7 +361,6 @@ footer {
 	background-color: rgb(60,60,150);
 	img {
 		filter: saturate(1);
-		filter: blur(3px);
 	}
 }
 
