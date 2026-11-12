@@ -71,6 +71,15 @@ p {
 	margin-bottom: 20px;
 }
 
+pre {
+	width: fit-content;
+	padding: 5px 10px 5px 10px;
+	background-color: rgb(0, 20, 50);
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
+}
+
 .p2 {
 	font-size: 18px;
 	color: rgba(255, 255, 255, 0.6);
@@ -83,6 +92,10 @@ ul {
 	color: rgba(255, 255, 255, 0.3);
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+hr {
+	color: rgb(200, 255, 0);
 }
 
 select {
@@ -108,7 +121,7 @@ select {
 	background-color: rgb(60, 60, 150);
 	border-radius: 20px;
 	padding: 10px;
-	margin: 0 10px 20px 0;
+	margin: 0 10px 20px 10px;
 	cursor: pointer;
 }
 
@@ -211,7 +224,11 @@ header {
 
 	header>section {
 		display: flex;
-		margin-bottom: 50px;
+	}
+
+	header>section>section {
+		/* display: flex; */
+		margin-top: 50px;
 	}
 
 	header>section>div {
@@ -357,6 +374,9 @@ footer {
 		display: none;
 		position: absolute;
 		padding: 2px 16px;
+		div {
+			padding: 0;
+		}
 		h3 {
 			color: rgb(200, 255, 0);
 		}
@@ -379,6 +399,12 @@ footer {
 	}
 	div {
 		display: block;
+		div {
+			display: flex;
+			pre {
+				margin-right: 10px;
+			}
+		}
 	}
 }
 /*
@@ -409,7 +435,7 @@ iframe {
 }
 
 /* Immagine autoritratto */
-.cartoon {
+/* .cartoon {
 	right: 20vh;
 	bottom: 0;
 	position: fixed;
@@ -420,7 +446,7 @@ iframe {
 		max-width: 550px;
 	}
 
-.show {display: block;}
+.show {display: block;} */
 
 /* Responsive versione mobile */
 @media only screen and (max-width: 1200px) {
@@ -435,9 +461,9 @@ iframe {
 /* Responsive versione mobile */
 @media only screen and (max-width: 600px) {
 	
-	.cartoon {
+	/* .cartoon {
 		display: none;
-	}
+	} */
 
 	header>div>a>h1 {
 		font-size: 20px;
