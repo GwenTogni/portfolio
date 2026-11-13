@@ -1,23 +1,23 @@
 
 /* Dropdown menu */
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-  window.onclick = function(event) {
+// Va tenuto FUORI da myFunction()
+window.onclick = function(event) {
+  // .closest() controlla il pulsante E qualsiasi elemento dentro di esso (es. icone <i>)
+  if (!event.target.closest('.menuPulsante')) {
+    var dropdowns = document.getElementsByClassName("menuVoci");
 
-    if (!event.target.matches('.menuPulsante')) {
-      var dropdowns = document.getElementsByClassName("menuVoci");
-
-      for (var i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
   }
+}
 
 /* Gallery */
 // function GalleriaImmagini(imgs) {

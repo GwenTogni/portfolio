@@ -263,7 +263,6 @@ header {
 	}
 
 	header>section>section {
-		/* display: flex; */
 		margin-top: 50px;
 	}
 
@@ -435,7 +434,6 @@ footer {
 .project:hover {
 	img {
 		filter: blur(2px) opacity(0.2) grayscale();
-			transition-duration: 0.2s;
 	}
 	div {
 		display: block;
@@ -465,20 +463,6 @@ iframe {
 	max-width: 800px;
 }
 
-/* Immagine autoritratto */
-/* .cartoon {
-	right: 20vh;
-	bottom: 0;
-	position: fixed;
-	padding: 0;
-}
-
-	.cartoon>img {
-		max-width: 550px;
-	}
-
-.show {display: block;} */
-
 /* Responsive versione mobile */
 @media only screen and (max-width: 1200px) {
 	.player {
@@ -491,10 +475,6 @@ iframe {
 
 /* Responsive versione mobile */
 @media only screen and (max-width: 600px) {
-	
-	/* .cartoon {
-		display: none;
-	} */
 
 	header>div>a>h1 {
 		font-size: 20px;
@@ -546,6 +526,11 @@ iframe {
 		display: none;
 	}
 
+	.show {
+		display: block;
+		transition: 2s;
+	}
+
 	.projects {
 		display:grid;
 	}
@@ -582,10 +567,10 @@ iframe {
 		padding: 0 5px 5px 0;
 	}
 
-	#expandedImg {
+	/* #expandedImg {
 		max-width: 500px;
 		max-height: 500px;
-	}
+	} */
 
 	embed {
 		width: 100%;
