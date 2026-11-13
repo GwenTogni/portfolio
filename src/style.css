@@ -489,6 +489,13 @@ iframe {
 		font-size: 30px;
 	}
 
+	table {
+		th {
+			font-size: 18px;
+			padding: 10px 10px 0 0;
+		}
+	}
+
 	.menuPulsante {
 		display: block;
 	}
@@ -500,6 +507,7 @@ iframe {
 	.menuVoci {
 		width: 100%;
 		left: 0;
+		background-color: rgb(0, 20, 50);
 	}
 
 	.banner {
@@ -528,7 +536,6 @@ iframe {
 
 	.show {
 		display: block;
-		transition: 2s;
 	}
 
 	.projects {
