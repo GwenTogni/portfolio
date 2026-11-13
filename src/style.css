@@ -433,10 +433,9 @@ footer {
 	}
 }
 .project:hover {
-	/* background-color: rgb(60,60,150); */
-	transition-duration: 0.2s;
 	img {
 		filter: blur(2px) opacity(0.2) grayscale();
+			transition-duration: 0.2s;
 	}
 	div {
 		display: block;
