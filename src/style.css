@@ -165,10 +165,13 @@ select {
 	position: relative;
 	display: block;
 }
-	/* .container2>div {
-		background-color: rgb(60, 60, 150);
-		padding: 10px;
-	} */
+	.container2>div {
+		display: flex;
+		pre {
+			margin-top: 0;
+			margin-right: 10px;
+		}
+	}
 
 	.container2>a {
 		font-size: 30px;
