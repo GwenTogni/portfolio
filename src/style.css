@@ -10,6 +10,31 @@ body {
 	padding: 0;
 }
 
+i {
+	min-width: 30px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+table {
+	font-size: 30px;
+	th {
+		color: rgba(255, 255, 255, 0.3);
+		padding: 20px 40px 20px 0;
+		text-align: left;
+		font-weight: normal;
+		a {
+			text-decoration: none;
+			color: rgb(100,100,255);
+		}
+		a:hover {
+			color: rgb(200, 255, 0);
+		}
+		i {
+			color: rgb(60, 60, 150);
+		}
+	}
+}
+
 .banner {
 	position: relative;
 	height: 150px;
@@ -188,6 +213,10 @@ select {
 		color: rgb(200, 255, 0);
 	}
 
+	.container2>p>i {
+		color: rgb(60, 60, 150);
+	}
+
 	.container2>a.button {
 		border: none;
 		font-size: 18px;
@@ -310,6 +339,9 @@ footer {
 
 			footer>section>div>p>a:hover {
 				color: rgb(100,100,255);
+				i {
+					color: rgb(255, 255, 255);
+				}
 			}
 
 /* Menu Dropdown */
@@ -559,4 +591,4 @@ iframe {
 	embed {
 		width: 100%;
 	}
-  }
+}
